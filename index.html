@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+mixed emotions - the journey
+by tacklebox / lance encarnado (2023)
+-->
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="The new album by Roy Woods - Mixed Emotions - out July 28">
+		<title>MIXED EMOTIONS - THE JOURNEY</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='css/plyr.css'>
+		<link rel="stylesheet" href="css/base.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<video playsinline autoplay muted loop disablepictureinpicture preload="auto" id="watercolorIntro">
+			<source src="assets/watercolorloop.mp4" type="video/mp4">
+		</video>
+
+		<div class="container" id="openingLogoContainer">
+			<div class="content">
+				<img id="openingLogo" src="assets/mixedemotionsanimated-noloop-crop.gif" alt="">
+				<p><button class="button" id="startButton">Start</button>
+				<div class="audiocontainer" id="introaudiocontainer">
+					<audio playsinline id="intro_audio">
+						<source src="assets/audio/intro.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="container1">
+			<div class="content">
+				<div class="question">
+					What's up, how's your day going?
+				</div>
+				<p><button class="button" id="button2a" onclick="displayQuestion2a()">TBH I’ve been better</button>
+				<p><button class="button" id="button2b" onclick="displayQuestion2b()">My day is 10/10</button>
+			</div>
+		</div>
+
+		<div class="container" id="container2a">
+			<div class="content" id="content2a">
+				<img id="tracklistimg" src="assets/mixedemotions-tracklist.jpg" alt="MIXED EMOTIONS - TRACKLIST">
+				<p id="pwithspacing">I wanted to share something to make your day a little brighter. Here's my FULL tracklist for my album, Mixed Emotions.
+				<div class="question">
+					What do you think?
+				</div>
+				<p><button class="button" id="button3a" onclick="displayQuestion3a()">MOD TING !!!</button>
+				<p><button class="button" id="button3b" onclick="displayQuestion3b()">Need more features</button>
+			</div>
+		</div>
+
+		<div class="container" id="container2b">
+			<div class="content" id="content2b">
+				<div class="audiocontainer" id="audiocontainer2b">
+					<audio id="unsettling_audio" preload="auto">
+						<source src="assets/audio/unsettling.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+				<p>I wanted to share part of an unreleased song that will be on the album with you, to keep up the good vibes of your day.
+				<div class="question">
+					What do you think of this song?
+				</div>
+				<p><button class="button" id="button3c" onclick="displayQuestion3c()">Let’s goooo, July 28th can’t come soon enough</button>
+				<p><button class="button" id="button3d" onclick="displayQuestion3d()">This reminds me of old school Roy Woods</button>
+			</div>
+		</div>
+
+		<div class="container" id="container3a">
+			<div class="content" id="content3a">
+				<div class="audiocontainer">
+					<audio id="hateme_audio" preload="auto">
+						<source src="assets/audio/hateme.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+				<p>So I’ve been working on this track Hate Me with Coi Leray…
+				<div class="question">
+					What do you think?
+				</div>
+				<p><button class="button" id="buttonfinal1a1" onclick="displayFinal1a1()">FIREEEE</button>
+				<p><button class="button" id="buttonfinal1a2" onclick="displayFinal1a2()">I want to hear the full track with the feature</button>
+			</div>
+		</div>
+
+		<div class="container" id="container3b">
+			<div class="content" id="content3b">
+				<div class="audiocontainer">
+					<audio id="thatthing_audio">
+						<source src="assets/audio/thatthing.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+				<p>So I’ve been working on this track That Thing and Jada Kingdom is featured.
+				<div class="question">
+					What vibe does this put you in??
+				</div>
+				<p><button class="button" id="buttonfinal1b1" onclick="displayFinal1b1()">Summer vibezzzz</button>
+				<p><button class="button" id="buttonfinal1b2" onclick="displayFinal1b2()">Old school Roy vibezzz</button>
+			</div>
+		</div>
+
+		<div class="container" id="container3c">
+			<div class="content" id="content3c">
+				<div class="audiocontainer">
+					<audio id="ijustwannalove_audio">
+						<source src="assets/audio/ijustwannalove.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+				<p>So I’ve been working on this track I Just Wanna Love… Give it a listen here.
+				<div class="question">
+					When’s the last time you were in your feelings?
+				</div>
+				<p><button class="button" id="buttonfinal2a1" onclick="displayFinal2a1()">Right now lol</button>
+				<p><button class="button" id="buttonfinal2a2" onclick="displayFinal2a2()">Been a minute</button>
+			</div>
+		</div>
+
+		<div class="container" id="container3d">
+			<div class="content">
+				<p>My fans have held me down with Drama!! Y’all still still play that song like it dropped yesterday…
+				<div class="question">
+				</div>
+				<p><button class="button" id="buttonfinal2b1" onclick="displayFinal2b1()">I have a little bit of drama with my friends</button>
+				<p><button class="button" id="buttonfinal2b2" onclick="displayFinal2b2()">Drama? That’s not me…</button>
+			</div>
+		</div>
+
+		<div class="container" id="containerfinal">
+			<div class="content">
+				<div class="question">
+					A message from me to you…
+				</div>
+				<div class="audiocontainer">
+					<audio id="final_audio">
+						<source src="assets/audio/final.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+				<p><button class="button" onclick="window.location.href='guestbook.html';">Continue</button>
+			</div>
+		</div>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+  	<script src='js/plyr.min.js'></script>
+	<script src="js/index.js"></script>
+</html>

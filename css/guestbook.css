@@ -1,0 +1,307 @@
+body {
+	background-color: #000;
+	font-size: 1.6vw;
+}
+
+a {
+	color: inherit;
+}
+
+.wrapper {
+	align-items: center;
+	display: flex;
+	height: 80%;
+	justify-content: center;
+	margin: auto;
+	width: 60%;
+	max-width: 80vw;
+}
+
+.aspect {
+	padding-bottom: 70%;
+	position: relative;
+	width: 100%;
+}
+
+.aspect-inner {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.flipbook {
+	height: 100%;
+	transition: margin-left 0.25s ease-out;
+	width: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.flipbook .page {
+	/* border: 2px;
+	border-color: #000;
+	border-style: solid; */
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	font-family: 'best_wishesregular', serif;
+	font-size: 1.8vw;
+	line-height: 2.4vw;
+	color: #000;
+	text-align: left;
+	text-rendering: geometricPrecision;
+}
+.guestbook_text {
+	margin: 3.6vw;
+}
+.guestbook_name_and_area {
+	text-align: right;
+}
+
+.flipbook .page img {
+	max-width: 100%;
+	height: 100%;
+}
+
+.innerpage {
+	background-image: url("../assets/guestbook_page_bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.endpage_btn_div, .endpage_albumcta, .endpage_videos, .guestbook_btns_div {
+	width: 40vw;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	z-index: 3;
+	position: relative;
+}
+
+.guestbook_btns_div {
+	margin-top: 25px;
+}
+
+/* .guestbook_btns_div button {
+	width: 20%;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	padding-top: 0.7vw;
+	padding-bottom: 0.4vw;
+} */
+
+#prevPageText, #nextPageText {
+	margin-left: 4vw;
+	margin-right: 4vw;
+	cursor: pointer;
+}
+
+#roy_signature {
+	width: 50%;
+	padding-top: 2.5vw;
+}
+
+.endpage_albumcta img {
+	width: 100%;
+}
+
+.endpage_albumcta img {
+	margin-bottom: 20px;
+}
+
+.endpage_videos h1 {
+	font-weight: 500;
+}
+
+.endpage_vid {
+	width: 40vw;
+	height: calc(40vw * (9/16));
+}
+
+/* SOCIAL ICONS */
+
+.socials {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.socials > * {
+	display:inline-block;
+}
+
+.social_icon {
+	width: 30px;
+	height: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+#facebook {
+	mask: url("../assets/socials/facebook.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/facebook.svg") no-repeat center / contain;
+}
+
+#youtube {
+	mask: url("../assets/socials/youtube.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/youtube.svg") no-repeat center / contain;
+}
+
+#twitter {
+	mask: url("../assets/socials/twitter.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/twitter.svg") no-repeat center / contain;
+}
+
+#instagram {
+	mask: url("../assets/socials/instagram.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/instagram.svg") no-repeat center / contain;
+}
+
+#tiktok {
+	mask: url("../assets/socials/tiktok.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/tiktok.svg") no-repeat center / contain;
+}
+
+/* hover effects only on web - so no sticky hover on mobile */
+@media (hover: hover) {
+	.social_icon:hover, .footerlogosvg:hover {
+		/* background-color: #00368C;
+		transition: background-color 0.1s; */
+		opacity: 0.5;
+		transition: opacity 0.1s;
+	}
+
+	.endpage_albumcta p a:hover {
+		opacity: 0.5;
+		transition: opacity 0.1s;
+	}
+
+	#prevPageText:hover, #nextPageText:hover {
+		opacity: 0.5;
+		transition: opacity 0.1s;
+	}
+}
+
+.social_icon:active, .footerlogosvg:active {
+	/* background-color: #00368C;
+	transition: background-color 0.1s; */
+	opacity: 0.5;
+	transition: opacity 0.1s;
+}
+
+.endpage_albumcta p a:active {
+	opacity: 0.5;
+	transition: opacity 0.1s;
+}
+
+/* END SOCIALS */
+
+/* sticky footer */
+.stickyfooter {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer {
+	margin: auto;
+	text-align: center;
+}
+
+.footer > * {
+	display:inline-block;
+}
+
+.footerlogosvg {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	background-color: white;
+}
+
+#ovosoundlogo {
+	mask: url("../assets/socials/ovosoundlogo.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/ovosoundlogo.svg") no-repeat center / contain;
+}
+
+#utulogo {
+	mask: url("../assets/socials/UTU_white.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/UTU_white.svg") no-repeat center / contain;
+}
+
+@font-face {
+	font-family: 'best_wishesregular';
+	src: url('font/best_wishes-webfont.woff2') format('woff2'),
+		 url('font/best_wishes-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		background-color: #000;
+		font-size: 4vw;
+	}
+
+	.wrapper {
+		width: 95vw;
+		max-width: 95vw;
+	}
+
+	.flipbook {
+		margin: auto !important;
+	}
+
+	.flipbook .page {
+		font-size: 4.6vw;
+		line-height: 6vw;
+	}
+
+	.guestbook_text {
+		margin: 8vw;
+	}
+
+	.endpage_btn_div, .endpage_albumcta, .endpage_videos, .guestbook_btns_div  {
+		width: 80vw;
+	}
+
+	.endpage_vid {
+		width: 80vw;
+		height: calc(80vw * (9/16));
+	}
+
+	.social_icon {
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+
+	/* .guestbook_btns_div button {
+		width: 25%;
+		padding-top: 3vw;
+		margin-left: 4vw;
+		margin-right: 4vw;
+	} */
+
+	#prevPageText, #nextPageText {
+		margin-left: 7vw;
+		margin-right: 7vw;
+	}
+
+	#roy_signature {
+		padding-top: 8vw;
+	}
+}

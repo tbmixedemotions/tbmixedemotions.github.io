@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="The new album by Roy Woods - Mixed Emotions - out July 28">
+		<title>MIXED EMOTIONS - THE JOURNEY</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/guestbook.css">
+		<link rel="stylesheet" href="css/guestbook_entry.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<video playsinline autoplay muted loop disablepictureinpicture preload="auto" id="watercolorIntro">
+			<source src="assets/watercolorloop.mp4" type="video/mp4">
+		</video>
+		<div class="backtosite">
+			<a href="guestbook.html">
+				< Back to site
+			</a>
+		</div>
+		<div class="entry_container">
+			<form class="form" id="entryform" action="https://docs.google.com/forms/d/e/1FAIpQLScsNRiAGsurNnup9elTHMtjVOOsAt6ef9amZ5hmAkc1lgYcYg/formResponse">
+				<p><label>Enter your name:</label>
+				<br><input required id="name_label" name="entry.1584230559" type="text" placeholder="Name">
+
+				<p><label>Enter your location:</label>
+				<br><input required id="location_label" name="entry.1807708429" type="text" placeholder="Location">
+
+				<p><label>Enter your message for Roy:</label>
+				<br><textarea required id="message_textarea" name="entry.110077291" maxlength="350" placeholder="Write your message..."></textarea>
+
+				<input id="submitButton" type="submit" value="Submit" formtarget="_blank">
+			</form>
+		</div>
+		<div id="notice">
+			*Messages will appear in the Mixed Emotions Journal within 24 hours of submission.
+		</div>
+	</body>
+</html>

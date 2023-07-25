@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="The new album by Roy Woods - Mixed Emotions - out July 28">
+		<title>MIXED EMOTIONS - THE JOURNEY</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/guestbook.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<video playsinline autoplay muted loop disablepictureinpicture preload="auto" id="watercolorIntro">
+			<source src="assets/watercolorloop.mp4" type="video/mp4">
+		</video>
+		<div class="endpage_btn_div">
+			<button class="button" onclick="window.location.href='index.html';">
+				< Back to start
+			</button>
+		</div>
+
+		<!-- GUESTBOOK -->
+		<div class="wrapper">
+			<div class="aspect">
+				<div class="aspect-inner">
+					<div class="flipbook" id="flipbook">
+						<div class="page">
+							<img src="assets/guestbook_front_new.jpg" draggable="false" alt="" />
+						</div>
+						<div class="page innerpage">
+							<div class="guestbook_text">
+								I wanna give a special thank you to everybody that joined me on this experience.
+								This means so much to me. This means the world to me. I hope that I’ve been able
+								to make your day a little bit better, we can all use that sometimes. Anyway, hope you
+								enjoy the album. This is Mixed Emotions.
+								<div class="guestbook_name_and_area">
+									<img id="roy_signature" src="assets/roy_signature.png" alt="Roy Woods">
+								</div>
+							</div>
+						</div>
+						<div class="page innerpage"></div>
+						<div class="page innerpage"></div>
+						<div class="page innerpage"></div>
+						<div class="page innerpage"></div>
+						<div class="page innerpage"></div>
+						<div class="page innerpage"></div>
+						<div class="page innerpage"></div>
+						<div class="page">
+							<img src="assets/guestbook_back.jpg" draggable="false" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="guestbook_btns_div">
+			<span id="prevPageText">< Prev Page</span>
+			<span id="nextPageText">Next Page ></span>
+		</div>
+		<!-- END GUESTBOOK -->
+
+		<div class="endpage_btn_div">
+			<button class="button" onclick="window.location.href='guestbook_entry.html';">
+				Leave a note for Roy Woods in this journal
+			</button>
+		</div>
+
+		<div class="endpage_albumcta">
+			<a href="https://ovo-roywoods.ffm.to/mixedemotions" target="_blank">
+				<img src="assets/mixedemotions-cover.jpg" alt="MIXED EMOTIONS">
+			</a>
+			<p>Pre-Save <i>Mixed Emotions</i> <a href="https://ovo-roywoods.ffm.to/mixedemotions" target="_blank">here</a></p>
+		</div>
+
+		<div class="endpage_videos">
+			<h1>VIDEOS</h1>
+			<p><iframe class="endpage_vid" src="https://www.youtube.com/embed/14LFL8qszYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+			<p><iframe class="endpage_vid" src="https://www.youtube.com/embed/EQqjSC0nldg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		</div>
+
+		<div class="socials">
+			<a href="https://www.facebook.com/roywoods/" target="_blank"><div id="facebook" class="social_icon"></div></a>
+			<a href="https://www.youtube.com/channel/UCN_uuL0yjn9H5fnFqpo2S1w" target="_blank"><div id="youtube" class="social_icon"></div></a>
+			<a href="https://twitter.com/roywoods" target="_blank"><div id="twitter" class="social_icon"></div></a>
+			<a href="https://www.instagram.com/roywoods/" target="_blank"><div id="instagram" class="social_icon"></div></a>
+			<a href="https://www.tiktok.com/@roywoods?lang=en" target="_blank"><div id="tiktok" class="social_icon"></div></a>
+		</div>
+
+		<div class="footer">
+			<a href="https://www.ovosound.com/" target="_blank">
+				<div id="ovosoundlogo" class="footerlogosvg"></div>
+			</a>
+
+			<a href="http://roywoods.com/" target="_blank">
+				<div id="utulogo" class="footerlogosvg"></div>
+			</a>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<!-- <script src="js/index.js"></script> -->
+	<script src="js/zoom.min.js"></script>
+	<script src="js/turn.min.js"></script>
+	<script src="js/swipedetector.js"></script>
+	<script src="js/guestbook.js"></script>
+</html>

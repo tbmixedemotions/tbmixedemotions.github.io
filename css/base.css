@@ -1,0 +1,392 @@
+html, body {
+	background-color: #000000;
+	color: #fff;
+	font-family: 'Founders Grotesk', Helvetica, sans-serif;
+	text-rendering: geometricPrecision;
+	font-weight: 400;
+}
+
+/* audio player styling */
+:root {
+  --plyr-color-main: #9c9c9c;
+  --plyr-audio-controls-background: #000;
+  --plyr-audio-control-color: #fff;
+  --plyr-control-icon-size: 40px;
+  --plyr-control-spacing: 20px;
+}
+
+button {
+	font-family: 'Founders Grotesk', Helvetica, sans-serif;
+	text-rendering: geometricPrecision;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#watercolorIntro {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 0;
+	/* mix-blend-mode: multiply; */
+	pointer-events: none;
+}
+
+#openingLogoContainer {
+	display: none;
+	mix-blend-mode: screen;
+	position: fixed;
+	z-index: 3;
+}
+
+#openingLogo {
+	width: 40vw;
+	pointer-events: none;
+}
+
+#startButton {
+	opacity: 0;
+	cursor: pointer;
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	/* font-weight: bold; */
+	font-size: 1.6vw;
+	letter-spacing: 0.05vw;
+	pointer-events: none; /* this gets changed dynamically */
+}
+
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1.6vw;
+	letter-spacing: 0.05vw;
+	overflow: hidden;
+
+	transition: filter 1s, opacity 1.5s;
+	-webkit-transition: filter 1s, opacity 1.5s;
+	z-index: 2;
+}
+
+.content {
+	/* margin: 4vw 15vw; */
+	margin: 0 15vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	line-height: 2.5vw;
+	overflow: scroll;
+}
+
+#content2a {
+	padding-bottom: 3vw;
+}
+
+.content > *:not(.question) {
+	margin-left: 8vw;
+	margin-right: 8vw;
+}
+
+.question {
+	font-size: 4.5vw;
+	font-weight: 500;
+	font-family: 'best_wishesregular';
+	/* text-transform: uppercase; */
+	margin-top: 3.5vw;
+	margin-bottom: 3.5vw;
+	line-height: 5.5vw;
+}
+
+.button, input[type=submit] {
+  background-color: #00368C;
+  border: none;
+  border-radius: 11px;
+  color: white;
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+  width: 20vw;
+  padding-top: 1vw;
+  padding-bottom: 0.7vw;
+  margin-bottom: 0.3vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.45vw;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.audiocontainer {
+	/* display: flex;
+    align-items: center;
+	justify-content: center;
+	gap: 3vw; */
+	margin: auto !important;
+	width: 40vw;
+	font-family: Helvetica, sans-serif;
+}
+
+#pwithspacing {
+	margin: 0 20vw;
+}
+
+#content2a {
+	width: 100%;
+}
+
+/* .wavecanvas {
+	width: 25vw;
+	height: 15vw;
+} */
+
+/* #container1, #container2a, #container2b { */
+#container1, #container2a, #container2b, #container3a, #container3b, #container3c, #container3d,
+#containerfinal1a-1, #containerfinal1a-2, #containerfinal1b-1, #containerfinal1b-2, #containerfinal2a-1, #containerfinal2a-2, #containerfinal2b-1, #containerfinal2b-2,
+#containerfinal {
+	display: none;
+	opacity: 0;
+	/* NO BLUR FOR NOW */
+	/* filter: blur(4px);
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-o-filter: blur(4px);
+	-ms-filter: blur(4px); */
+	transition: filter 1s, opacity 1.5s;
+	-webkit-transition: filter 1s, opacity 1.5s;
+}
+
+#tracklistimg {
+	width: 35vw;
+}
+
+#introaudiocontainer {
+	display: block;
+	opacity: 0;
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	pointer-events: none;
+}
+
+/* .playpausebtn {
+	width: 5vw;
+	cursor: pointer;
+} */
+
+/* hover effects only on web - so no sticky hover on mobile */
+@media (hover: hover) {
+	.button:hover, input[type=submit]:hover {
+		opacity: .5 !important;
+		transition: opacity 0.35s;
+		-webkit-transition: opacity 0.35s;
+	}
+
+	.playpausebtn:hover {
+		opacity: .5 !important;
+		transition: opacity 0.2s;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	html, body {
+		/* mobile only bg */
+		background-image: url("../assets/mobile_bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.container {
+		font-size: 4.5vw;
+		/* letter-spacing: 0.15vw; */
+	}
+
+	#openingLogo {
+		width: 80vw;
+	}
+
+	#watercolorIntro {
+		right: auto;
+		left: 0;
+	}
+
+	#startButton {
+		font-size: 5vw;
+		/* letter-spacing: 0.2vw; */
+	}
+
+	.content {
+		margin: 0 6vw;
+		line-height: 5.4vw;
+		padding-top: 2vw;
+		padding-bottom: 2vw;
+	}
+
+	.question {
+		font-size: 8vw;
+		line-height: 8.5vw;
+		letter-spacing: 0.26vw;
+		margin-top: 6.5vw;
+		margin-bottom: 6.5vw;
+	}
+
+	.button, input[type=submit] {
+		font-size: 5vw;
+		/* padding: 4vw 5vw; */
+		padding-top: 4vw;
+		padding-bottom: 3.1vw;
+		width: 64vw;
+	}
+
+	#tracklistimg {
+		width: 80vw;
+		margin-top: 10vw;
+	}
+
+	/* .wavecanvas {
+		width: 50vw;
+		height: 30vw;
+	}
+
+	.playpausebtn {
+		width: 13vw;
+	} */
+
+	.audiocontainer {
+		width: 80vw;
+	}
+
+	#pwithspacing {
+		margin: 0 10vw;
+	}
+
+	/* adding scroll to some longer divs */
+
+	#content2a {
+		padding-bottom: 16vw;
+	}
+
+	#button3b {
+		margin-bottom: 13vw;
+	}
+
+	#content2b, #content3a, #content3b, #content3c {
+		width: 100%;
+	}
+
+	#content2b .question, #content3a .question, #content3b .question, #content3c .question {
+		padding-left: 6vw;
+		padding-right: 6vw;
+	}
+
+	/* #audiocontainer2b {
+		padding-top: 25vw;
+	}
+
+	#button3d {
+		margin-bottom: 35vw;
+	} */
+
+	#content2b > div:first-child, #content3a > div:first-child, #content3b > div:first-child, #content3c > div:first-child {
+		padding-top: 30vw;
+	}
+
+	#button3d, #buttonfinal1a2, #buttonfinal1b2, #buttonfinal2a2 {
+		margin-bottom: 35vw;
+	}
+
+	/* end adding scroll */
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-Medium.woff2') format('woff2'),
+        url('font/FoundersGrotesk-Medium.woff') format('woff'),
+        url('font/FoundersGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-Semibold.woff2') format('woff2'),
+        url('font/FoundersGrotesk-Semibold.woff') format('woff'),
+        url('font/FoundersGrotesk-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-SemiboldItalic.woff2') format('woff2'),
+        url('font/FoundersGrotesk-SemiboldItalic.woff') format('woff'),
+        url('font/FoundersGrotesk-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-RegularItalic.woff2') format('woff2'),
+        url('font/FoundersGrotesk-RegularItalic.woff') format('woff'),
+        url('font/FoundersGrotesk-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-Regular.woff2') format('woff2'),
+        url('font/FoundersGrotesk-Regular.woff') format('woff'),
+        url('font/FoundersGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-BoldItalic.woff2') format('woff2'),
+        url('font/FoundersGrotesk-BoldItalic.woff') format('woff'),
+        url('font/FoundersGrotesk-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-Bold.woff2') format('woff2'),
+        url('font/FoundersGrotesk-Bold.woff') format('woff'),
+        url('font/FoundersGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('font/FoundersGrotesk-MediumItalic.woff2') format('woff2'),
+        url('font/FoundersGrotesk-MediumItalic.woff') format('woff'),
+        url('font/FoundersGrotesk-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'best_wishesregular';
+	src: url('font/best_wishes-webfont.woff2') format('woff2'),
+		 url('font/best_wishes-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,86 @@
+.backtosite {
+	font-size: 1.7vw;
+	margin: auto;
+	text-align: center;
+	padding-top: 2vw;
+	position: relative;
+}
+
+.backtosite a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.entry_container {
+	width: 40vw;
+	margin: auto;
+	text-align: center;
+	font-size: 2.2vw;
+	position: relative;
+}
+
+#message_textarea, #name_label, #location_label {
+	width: 100%;
+	font-family: inherit;
+	font-size: 1.7vw;
+	padding-top: 0.7vw;
+	padding-left: 0.7vw;
+	border: none;
+	margin-top: 0.8vw;
+}
+
+#message_textarea {
+	height: 18vw;
+	padding: 0.5vw;
+}
+
+input[type=submit] {
+	margin-top: 1vw;
+	padding-bottom: 0.9vw;
+	-webkit-appearance: none;
+}
+
+#notice {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	width: 40vw;
+	padding-bottom: 1.5vw;
+}
+
+@media (hover: hover) {
+	.backtosite a:hover {
+		opacity: 0.5;
+		transition: opacity 0.1s;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.entry_container {
+		width: 80vw;
+		font-size: 5vw;
+	}
+
+	#message_textarea, #name_label, #location_label {
+		font-size: 4vw;
+		padding-top: 1.5vw;
+		padding-left: 1.5vw;
+		margin-top: 2vw;
+	}
+
+	#message_textarea {
+		height: 35vw;
+		padding: 1.5vw;
+	}
+
+	.backtosite {
+		font-size: 5vw;
+		padding-top: 8vw;
+		padding-bottom: 2vw;
+	}
+
+	input[type=submit] {
+		padding-bottom: 4.5vw;
+		margin-top: 4vw;
+	}
+}
