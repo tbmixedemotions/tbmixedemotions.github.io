@@ -169,6 +169,21 @@ a {
 	-webkit-mask: url("../assets/socials/tiktok.svg") no-repeat center / contain;
 }
 
+#snapchat {
+	mask: url("../assets/socials/snapchat.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/snapchat.svg") no-repeat center / contain;
+}
+
+#applemusic {
+	mask: url("../assets/socials/applemusic.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/applemusic.svg") no-repeat center / contain;
+}
+
+#spotify {
+	mask: url("../assets/socials/spotify.svg") no-repeat center / contain;
+	-webkit-mask: url("../assets/socials/spotify.svg") no-repeat center / contain;
+}
+
 /* hover effects only on web - so no sticky hover on mobile */
 @media (hover: hover) {
 	.social_icon:hover, .footerlogosvg:hover {
@@ -303,5 +318,9 @@ a {
 
 	#roy_signature {
 		padding-top: 8vw;
+	}
+
+	.socials {
+		line-height: 35px;
 	}
 }
