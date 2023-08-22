@@ -74,7 +74,7 @@ a {
 	background-repeat: no-repeat;
 }
 
-.endpage_btn_div, .endpage_albumcta, .endpage_videos, .guestbook_btns_div {
+.endpage_btn_div, .endpage_albumcta, .endpage_videos, .guestbook_btns_div, .endpage_tour {
 	width: 40vw;
 	margin: auto;
 	text-align: center;
@@ -114,6 +114,42 @@ a {
 .endpage_albumcta img {
 	margin-bottom: 20px;
 }
+
+/* TOUR */
+
+.endpage_tour img {
+	padding-top: 30px;
+	width: 100%;
+}
+
+#tourwidget {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* HIDE "Track to get concert, live stream and tour updates." TEXT */
+.bit-top-track-button {
+	display: none !important;
+	padding: 5px 0px 0px 0px !important;
+}
+
+.bit-nav-bar-container {
+	padding: 0px !important;
+}
+
+.bit-upcoming-events, .bit-past-events {
+	margin: 0px 0px 10px 0px !important;
+}
+
+.bit-event {
+	padding: 16px 0px !important;
+}
+
+.bit-upcoming-events-show-all-button {
+	margin: 0px !important;
+}
+
+/* END TOUR */
 
 .endpage_videos h1 {
 	font-weight: 500;
@@ -290,7 +326,7 @@ a {
 		margin: 8vw;
 	}
 
-	.endpage_btn_div, .endpage_albumcta, .endpage_videos, .guestbook_btns_div  {
+	.endpage_btn_div, .endpage_albumcta, .endpage_videos, .guestbook_btns_div, .endpage_tour  {
 		width: 80vw;
 	}
 
